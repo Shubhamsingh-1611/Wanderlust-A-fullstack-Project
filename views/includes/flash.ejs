@@ -1,0 +1,28 @@
+<!-- for not showing the alet box -->
+<% if(sucess && sucess.length) { %>
+<div    class="alert alert-success alert-dismissible fade show col-6 offset-3"
+role='alert'>
+ <%= sucess  %>
+ <button
+ type="button"
+ class="btn-close"
+ data-bs-dismiss="alert"
+ arial-label="Close">
+
+ </button>
+</div>
+<% } %>
+
+<% if(errormsg && errormsg.length) { %>
+    <div    class="alert alert-success alert-dismissible fade show col-6 offset-3"
+    role='alert'>
+     <%= errormsg  %>
+     <button
+     type="button"
+     class="btn-close"
+     data-bs-dismiss="alert"
+     arial-label="Close">
+    
+     </button>
+    </div>
+    <% } %>
