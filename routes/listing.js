@@ -44,7 +44,7 @@ router.get("/", wrapAsync(listingController.index));
      }})
      .populate("owner");
      if(!listing) {
-        req.flash("error","listing does not exist");
+        req.flash("cd","listing does not exist");
         res.redirect("/listings");
      }
      res.render("show.ejs",{listing});
